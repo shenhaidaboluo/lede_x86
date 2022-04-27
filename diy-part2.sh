@@ -15,4 +15,4 @@
 
 git clone https://github.com/openwrt/packages.git packages_github
 cd packages_github && git reset --hard 7dc1f3e0293588ebc544e8eee104043dd0dacaf5 && cd ..
-rm -rf feed/packages/lang/golang && cp -r packages_github/lang/golang feed/packages/lang/
+rm -rf feeds/packages/lang/golang && cp -r packages_github/lang/golang feeds/packages/lang/
