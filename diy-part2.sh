@@ -12,3 +12,7 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+git clone https://github.com/openwrt/packages.git packages_github
+cd packages_github && git reset --hard 7dc1f3e0293588ebc544e8eee104043dd0dacaf5 && cd ..
+rm -rf feed/packages/lang/golang && cp -r packages_github/lang/golang feed/packages/lang/
